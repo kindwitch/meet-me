@@ -1,4 +1,5 @@
 import EditTopicForm from '@/app/components/EditTopicForm'
+import React from 'react'
 
 const apiUrl = process.env.API_URL
 
@@ -15,7 +16,6 @@ const getTopicById = async (id: string) => {
     console.log(error)
   }
 }
-
 export default async function EditTopic({
   params,
 }: {
